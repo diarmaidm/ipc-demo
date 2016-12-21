@@ -1,0 +1,16 @@
+{
+  "name": "ipc-demo",
+  "version": "1.0.0",
+  "description": "Doing Electron Fundamentals on pluralsight.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "diarmaidm",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.13"
+  }
+}
