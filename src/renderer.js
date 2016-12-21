@@ -1,3 +1,12 @@
+const electron = require('electron');
+const ipc = electron.ipcRenderer;
+
 document.getElementById('start').addEventListener('click', _ => {
-  console.log('start clicked!');
-})
+  ipc.send('countdown-start');
+});
+
+document.getElementById('quit').addEventListener('click', _ => {
+  if (confirm('Are you sure?')) {
+    ipc.send('quit-app');
+  }
+});
