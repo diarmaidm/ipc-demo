@@ -10,3 +10,7 @@ document.getElementById('quit').addEventListener('click', _ => {
     ipc.send('quit-app');
   }
 });
+
+ipc.on('countdown', (evt, count) => {
+  document.getElementById('count').innerHTML = count;
+});

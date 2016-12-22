@@ -1,9 +1,9 @@
-module.exports = function countdown() {
-  let count = 10;
+module.exports = function countdown(tick) {
+  let count = 3;
 
   let timer = setInterval(_ => {
-    count--;
-    if (count === 0) {
+    tick(count--);
+    if (count === -1) {
       clearInterval(timer);
     }
   }, 1000); // runs every 1 second

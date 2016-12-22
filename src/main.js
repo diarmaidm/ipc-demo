@@ -29,7 +29,9 @@ app.on('quit', () => {
 });
 
 ipc.on('countdown-start', _ => {
-  console.log('ipc.on  countdown-start');
+  countdown(count => {
+    mainWindow.webContents.send('countdown', count);
+  });
 });
 
 ipc.on('quit-app', _ => {

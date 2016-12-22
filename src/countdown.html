@@ -1,15 +1,17 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="countdown.css">
-    <body>
-      <h1><center>Brilliant :)</center></h1>
-      <p>
-        <button id="start" name="start">Start</button>
-      </p>
-      <p>
-        <button id='quit' name='quit'>Quit</button>
-      </p>
-      <script>require('./renderer')</script>
-    </body>
-  </head>
+
+<head>
+  <link rel="stylesheet" href="countdown.css">
+
+  <body>
+    <div class="container">
+      <h1 class="title"> Brilliant :) </h1>
+      <div class="countdown" id="count"></div>
+      <button class="btn" id="start" name="start">Start</button>
+      <button class="btn" id='quit' name='quit'>Quit</button>
+    </div>
+    <script>require('./renderer')</script>
+</body>
+</head>
+
 </html>
